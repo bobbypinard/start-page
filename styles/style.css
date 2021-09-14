@@ -1,0 +1,82 @@
+/*
+
+Background: 282a36
+Current Line: 44475a
+Selection: 44475a
+Foreground: f8f8f2
+Comment: 6272a4
+
+Cyan: 8be9fd;
+Green: 50fa7b;
+Orange: ffb86c;
+Pink: ff79c6;
+Purple: bd93f9;
+Red: ff5555;
+Yellow: f1fa8c;
+
+*/
+
+html {
+    background-color: #282a36;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#ticker {
+    margin: -8px;
+    background-color: #44475a;
+    padding: 3px;
+    text-align: center;
+    box-shadow: 0 3px 5px #1c1d25;
+}
+
+#ticker li {
+    margin: 0 10px;
+    display: inline;
+    color: #bd93f9;
+}
+
+#ticker span {
+    color: #f1fa8c;
+}
+
+#date {
+    color: #ff79c6;
+}
+
+#date span {
+    color: #50fa7b;
+}
+
+#clock {
+    color: #ff79c6;
+}
+
+#clock span {
+    color: #50fa7b;
+}
+
+.card {
+    margin: auto;
+    transform: translateY(20px);
+    width: 70vw;
+    height: 175px;
+    background-color: #44475a;
+    box-shadow: 3px 3px 5px #1c1d25;
+}
+
+.card h2 {
+    color: #bd93f9;
+}
+
+.card li {
+    list-style-type: none;
+}
+
+.card a {
+    text-decoration: none;
+    color: #50fa7b;
+}
