@@ -26,11 +26,15 @@ body {
 }
 
 #ticker {
-    margin: -8px;
+    z-index: 1;
+    top: -16;
+    left: 0;
+    width: 100%;
     background-color: #44475a;
     padding: 3px;
     text-align: center;
     box-shadow: 0 3px 5px #1c1d25;
+    position: fixed;
 }
 
 #ticker li {
@@ -44,14 +48,15 @@ body {
 }
 
 #date {
-    color: #ff79c6;
-}
-
-#date span {
-    color: #50fa7b;
+    margin-top: 10%;
+    font-size: 1.2rem;
+    color: #ffb86c;
 }
 
 #clock {
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
     color: #ff79c6;
 }
 
@@ -59,11 +64,25 @@ body {
     color: #50fa7b;
 }
 
+#search {
+    width: 70vw;
+    background-color: #282a36;
+    color: grey;
+    border: 2px solid rgb(92, 92, 92);
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     margin: auto;
     transform: translateY(20px);
     width: 70vw;
-    height: 175px;
+    height: 150px;
     background-color: #44475a;
     box-shadow: 3px 3px 5px #1c1d25;
 }
@@ -72,8 +91,9 @@ body {
     color: #bd93f9;
 }
 
-.card li {
+.card ul {
     list-style-type: none;
+    padding: 0;
 }
 
 .card a {
