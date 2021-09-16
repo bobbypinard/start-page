@@ -1,8 +1,14 @@
 @media screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     #ticker {
         top: auto;
         left: auto;
-        width: auto;
+        width: 50%;
         background-color: #282a36;
         padding: 0;
         box-shadow: none;
@@ -15,7 +21,6 @@
     #ticker li {
         display: block;
         margin: 10px auto;
-        /* transform: translateY(20px); */
         width: 325px;
         height: 150px;
         background-color: #44475a;

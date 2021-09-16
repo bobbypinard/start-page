@@ -74,10 +74,11 @@ body {
     padding: 5px;
 }
 
-main {
+#cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 .card {
