@@ -74,16 +74,18 @@ body {
     padding: 5px;
 }
 
-main {
+#cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 50%;
+    gap: 1rem;
 }
 
 .card {
     margin: 10px auto;
-    /* transform: translateY(20px); */
-    width: 325px;
+    width: 17vw;
+    min-width: 200px;
     height: 150px;
     background-color: #44475a;
     box-shadow: 3px 3px 5px #1c1d25;
