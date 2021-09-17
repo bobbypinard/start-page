@@ -9,7 +9,7 @@
     #ticker {
         top: auto;
         left: auto;
-        width: 40%;
+        width: 45%;
         background-color: #282a36;
         padding: 0;
         box-shadow: none;
@@ -20,16 +20,18 @@
     }
 
     #ticker li {
+        padding-top: 5px;
         font-size: 1.4rem;
         display: block;
         margin: 10px auto;
-        width: 325px;
-        height: 150px;
+        width: 20vw;
+        min-width: 200px;
+        height: 200px;
         background-color: #44475a;
         box-shadow: 3px 3px 5px #1c1d25;
     }
 
     #cards {
-        width: 50%;
+        width: 45%;
     }
 }
