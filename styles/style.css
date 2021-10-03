@@ -16,6 +16,15 @@ Yellow: f1fa8c;
 
 */
 
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 html {
     background-color: #282a36;
 }
@@ -83,6 +92,7 @@ body {
 }
 
 .card {
+    animation: .5s ease-in 0s 1 slideUp;
     margin: 10px auto;
     width: 17vw;
     min-width: 200px;

@@ -7,6 +7,7 @@
     }
 
     #ticker {
+        animation: .5s ease-in 0s 1 slideUp;
         top: auto;
         left: auto;
         width: 45%;
