@@ -1,6 +1,10 @@
-const d = new Date();
-const hour = d.getHours();
-const minute = d.getMinutes();
+const clock = () => {
+    const d = new Date();
+    const hour = d.getHours();
+    const minute = d.getMinutes();
+    
+    document.getElementById("hour").innerHTML = hour;
+    document.getElementById("minute").innerHTML = minute;
+}
 
-document.getElementById("hour").innerHTML = hour;
-document.getElementById("minute").innerHTML = minute;
+setInterval(clock, 1000);
