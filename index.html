@@ -11,25 +11,30 @@
 </head>
 <body>
     <header>
+        <!-- Date -->
         <h2 id="date"></h2>
+        
+        <!-- Clock -->
         <h1 id="clock"><span id="hour"></span>:<span id="minute"></span></h1>
 
-        <input id="search" placeholder="Search" type="search">
-
+        <!-- Ecosia search -->
         <form action='https://ecosia.org/search' method='GET'>
             <input name='q' type='search' placeholder='Search'>
         </form>
-
     </header>
 
     <main>
+        <!-- Ticker tape on mobile, and ticker blocks on dektop -->
         <ul id="ticker">
             <li class="stock">SPY: <span>345.23</span></li>
             <li class="stock">VIX: <span>345.23</span></li>
             <li class="crypto">BTC: <span>345.23</span></li>
             <li class="crypto">ETH: <span>345.23</span></li>
         </ul>
+
+        <!-- Link cards -->
         <div id="cards">
+            <!-- Social media -->
             <div class="card">
                 <h2>Social</h2>
                 <ul>
@@ -38,7 +43,8 @@
                     <li><a href="https://www.reddit.com/">Reddit</a></li>
                 </ul>
             </div>
-    
+            
+            <!-- Educational tools -->
             <div class="card">
                 <h2>Learn</h2>
                 <ul>
@@ -48,6 +54,7 @@
                 </ul>
             </div>
     
+            <!-- Miscellaneous tools -->
             <div class="card">
                 <h2>Tools</h2>
                 <ul>
@@ -58,6 +65,7 @@
                 </ul>
             </div>
             
+            <!-- Sports -->
             <div class="card">
                 <h2>Sports</h2>
                 <ul>
@@ -68,6 +76,7 @@
                 </ul>
             </div>
             
+            <!-- Cord cutting subscriptions -->
             <div class="card">
                 <h2>Media</h2>
                 <ul>
@@ -77,17 +86,12 @@
                     <li><a href="https://www.peacocktv.com/watch/home">Peacock TV</a></li>
                 </ul>
             </div>
-            
-            <div class="card">
-                <h2>Sports</h2>
-                <ul>
-                    <li><a href="https://www.formula1.com/">Formula 1</a></li>
-                    <li><a href="https://www.redbull.com/int-en/redbullracing">RedBull Racing</a></li>
-                    <li><a href="https://www.premierleague.com/">Premier League</a></li>
-                    <li><a href="https://www.chelseafc.com/en">Chelsea F.C.</a></li>
-                </ul>
-            </div>
-        </div>
+
+            <!--**************************-->
+            <!--                          -->
+            <!-- Need to add a sixth card -->
+            <!--                          -->
+            <!--**************************-->
     </main>
     <script src="scripts/clock.js"></script>
     <script src="scripts/date.js"></script>
