@@ -3,23 +3,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start page</title>
+
+    <!-- Load CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/style-tablet.css">
     <link rel="stylesheet" href="styles/style-desktop.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <title>Start page</title>
+        
+    <!-- Deferring the JavaScript to load after the HTML and CSS -->
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/clock.js"></script>
+    <script defer src="scripts/search.js"></script>
 </head>
+
 <body>
     <header>
         <!-- Date -->
         <h2 id="date"></h2>
         
         <!-- Clock -->
-        <h1 id="clock"><span id="hour"></span>:<span id="minute"></span></h1>
+        <h1 id="clock"></h1>
+
+        <!-- Weather widget -->
+        <div id="weather">
+            
+        </div>
 
         <!-- Ecosia search -->
-        <form action='https://ecosia.org/search' method='GET'>
-            <input name='q' type='search' placeholder='Search'>
+        <form id="search" action='https://ecosia.org/search' method='GET'>
+            <button type="button"><img id="se-logo" src="img/ecosia.png"></button><input name='q' id="search-input" type='search' placeholder='Search with Ecosia'>
         </form>
     </header>
 
@@ -95,7 +108,5 @@
             <!--                          -->
             <!--**************************-->
     </main>
-    <script src="scripts/clock.js"></script>
-    <script src="scripts/date.js"></script>
 </body>
 </html>
