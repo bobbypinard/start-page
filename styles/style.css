@@ -36,21 +36,19 @@ body {
     color: #B10082;
 }
 
-#date {
+#clock {
     margin-top: 50px;
-    font-size: 1.2rem;
     color: #5f00af;
 }
 
-#clock {
+#time {
     margin: 0;
     padding: 0;
     font-size: 5rem;
-    color: #5f00af;
 }
 
-#clock span {
-    color: #50fa7b;
+#date {
+    font-size: 1.2rem;
 }
 
 #se-logo{
