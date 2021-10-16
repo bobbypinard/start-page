@@ -1,8 +1,11 @@
-const date = () => {
-    const time = new Date();
-    const date = time.toDateString();
-    
-    document.getElementById("date").innerHTML = date;
-}
+// Initial display of date
+const atoday = new Date();
+const date = atoday.toLocaleTimeString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+document.getElementById("date").innerHTML = date;
 
-setInterval(date, 1000);
+// Auto reload date
+setInterval(() => {
+    const atoday = new Date();
+    const date = atoday.toLocaleTimeString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    document.getElementById("date").innerHTML = date;
+}, 1000);

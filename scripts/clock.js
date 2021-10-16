@@ -1,10 +1,11 @@
-const clock = () => {
-    const d = new Date();
-    const hour = d.getHours();
-    const minute = d.getMinutes();
-    
-    document.getElementById("hour").innerHTML = hour;
-    document.getElementById("minute").innerHTML = minute;
-}
+// Initial display of time
+const today = new Date();
+const time = today.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'});
+document.getElementById("clock").innerHTML = time;
 
-setInterval(clock, 1000);
+// Auto reload time
+setInterval(() => {
+    const today = new Date();
+    const time = today.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'});
+    document.getElementById("clock").innerHTML = time;
+}, 1000);
