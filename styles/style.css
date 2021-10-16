@@ -13,15 +13,6 @@ Purple:         #B10082
 Dark Purple:    #6b004f
 */
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -67,7 +58,7 @@ body {
     height: 2rem;
 }
 
-#search input{
+#se-input{
     height: 2rem;
     width: 80vw;
     color: #5f00af;
@@ -83,7 +74,6 @@ body {
 }
 
 .card {
-    animation: .5s ease-in 0s 1 slideUp;
     margin: 10px auto;
     width: 80vw;
     min-width: 200px;

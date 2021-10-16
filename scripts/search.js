@@ -1,6 +1,5 @@
-let se = 2;
-
 // Listen if logo has been clicked
+let se = 2;
 document.getElementById("se-logo").addEventListener("click", function() {
     se++;
     cycleSearchEngines(se);
@@ -21,11 +20,11 @@ const searchEngines = [{
     action: "https://www.youtube.com/results?q="
 }]
 
-// Replace search field with desired engine
+// Replace search fields with desired engine
 const cycleSearchEngines = se => {
     const curData = searchEngines[(se+1) % searchEngines.length];
   
     document.getElementById("se-logo").src = "img/" + curData.src;
-    document.getElementById("search-input").placeholder = "Searching with " + curData.placeholder;
-    document.getElementById("search").action = curData.action;
+    document.getElementById("se-input").placeholder = "Searching with " + curData.placeholder;
+    document.getElementById("se").action = curData.action;
   };
