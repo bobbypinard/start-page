@@ -25,6 +25,6 @@ const cycleSearchEngines = se => {
     const curData = searchEngines[(se+1) % searchEngines.length];
   
     document.getElementById("se-logo").src = "img/" + curData.src;
-    document.getElementById("se-input").placeholder = "Searching with " + curData.placeholder;
+    document.getElementById("se-input").placeholder = "Search with " + curData.placeholder;
     document.getElementById("se").action = curData.action;
   };

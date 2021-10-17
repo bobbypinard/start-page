@@ -18,32 +18,36 @@
 
 <body>
     <header>
-        <!-- Clock widget -->
-        <div id="clock">
-            <h1 id="time"></h1>
-            <h2 id="date"></h2>
+        <q id="mantra"><i>If I give more than I take and I fix more than I break, I know I'm yours</i></q>
+        
+        <div id="info">
+            <!-- Clock widget -->
+            <div id="clock">
+                <h1 id="time"></h1>
+                <h2 id="date"></h2>
+            </div>
+    
+            <!-- Weather widget -->
+            <div id="weather">
+                
+            </div>
         </div>
+    </header>
 
-        <!-- Weather widget -->
-        <div id="weather">
-            
-        </div>
-
+    <main>
         <!-- Dynamic search -->
         <form id="se" action='https://ecosia.org/search' method='GET'>
             <button type="button"><img id="se-logo" src="img/ecosia.png"></button><input name='q' id="se-input" type='search' placeholder='Search with Ecosia'>
         </form>
-    </header>
 
-    <main>
         <!-- Ticker tape on mobile, and ticker blocks on dektop -->
         <ul id="ticker">
-            <li class="stock">SPY: <span>345.23</span></li>
-            <li class="stock">DJI: <span>345.23</span></li>
-            <li class="stock">IXIC: <span>345.23</span></li>
-            <li class="stock">VIX: <span>345.23</span></li>
-            <li class="crypto">BTC: <span>345.23</span></li>
-            <li class="crypto">ETH: <span>345.23</span></li>
+            <li class="stock">SPY: <span>345.23</span>&#9650;</li>
+            <li class="stock">DJI: <span>345.23</span>&#9660;</li>
+            <li class="stock">IXIC: <span>345.23</span>&#9650;</li>
+            <li class="stock">VIX: <span>345.23</span>&#9660;</li>
+            <li class="crypto">BTC: <span>345.23</span>&#9650;</li>
+            <li class="crypto">ETH: <span>345.23</span>&#9660;</li>
         </ul>
 
         <!-- Link cards -->
@@ -64,7 +68,6 @@
                 <ul>
                     <li><a href="https://teamtreehouse.com/home">Treehouse</a></li>
                     <li><a href="https://css-tricks.com/">CSS tricks </a></li>
-                    <li><a href="https://leetcode.com/">Leetcode</a></li>
                 </ul>
             </div>
     
@@ -101,6 +104,15 @@
                 </ul>
             </div>
 
+            <!-- Sites to practice my skills -->
+            <div class="card">
+                <h2>Practice</h2>
+                <ul>
+                    <li><a href="https://leetcode.com/">Leetcode</a></li>
+                    <li><a href="https://algoexpert.io/">Algo Expert</a></li>
+                    <li><a href="https://keybr.com/">Keybr</a></li>
+                </ul>
+            </div>
             <!--**************************-->
             <!--                          -->
             <!-- Need to add a sixth card -->
